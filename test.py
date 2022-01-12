@@ -1,24 +1,3 @@
-# import requests
-# from bs4 import BeautifulSoup
-
-# r = 'https://ru.wikipedia.org/wiki/'
-# n = r+'timati'
-
-
-# def main(url):
-# 	r = requests.get(url).text
-# 	return main_head(r)
-
-# def main_head(html):
-# 	soup = BeautifulSoup(html,'lxml')
-# 	head = soup.find('div',class_="mw-parser-output").find('p')
-# 	print(head.text)
-
-# main(n)
-
-
-
-
 import random 
 
 class Main:
@@ -83,27 +62,5 @@ def main():
   key = random.randint(0,100)
   if fale[-4::] == ".txt" and key > 0:
     main_shif = Main(fale,key)
-    main_shif.update()
-
-    
-  
+    main_shif.update() 
 main()
-
-
-
-# a = 1055
-# n = ""
-# for i in range(0,20): 
-# 	b = a/2
-# 	if b <= 0:
-# 		break
-# 	elif int(b) != b:
-# 		n  += "0"
-# 		a = int(b)
-# 	else:
-# 		n += "1"
-# 		a = b
-	
-
-# print(n)
-#      
