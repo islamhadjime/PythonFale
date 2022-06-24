@@ -1,4 +1,4 @@
-import random 
+import random
 
 class Main:
   def __init__(self,fale,key):
@@ -18,8 +18,6 @@ class Main:
             n = ord(items[j])
             self.newList.append(n)
         return self.shif(self.newList)
-        
-
     except FileNotFoundError:
       return "File error"
 
@@ -40,20 +38,17 @@ class Main:
   					number += "1"
   					a = b
   		elif a ==" ":
-
-  			
-
   			self.listResult.append(number)
   			self.listResult.append(" ")
-  			number = " "	
+  			number = " "
   	with open(self.new_fale,"a") as fale:
   		fale.write(str(self.listResult))
-  
 
-def main():		
+
+def main():
   fale = "YOUR_FILE.txt"
   key = random.randint(0,100)
   if fale[-4::] == ".txt" and key > 0:
     main_shif = Main(fale,key)
-    main_shif.update() 
+    main_shif.update()
 main()
