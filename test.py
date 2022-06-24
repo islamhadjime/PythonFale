@@ -21,7 +21,7 @@ class Main:
         
 
     except FileNotFoundError:
-      print("Fale now fack")
+      return "File error"
 
   def shif(self,listOrd):
   	number = ""
@@ -48,17 +48,10 @@ class Main:
   			number = " "	
   	with open(self.new_fale,"a") as fale:
   		fale.write(str(self.listResult))
-   
-  	
-  				
-
   
-      
-    
-
 
 def main():		
-  fale = "test.txt"
+  fale = "YOUR_FILE.txt"
   key = random.randint(0,100)
   if fale[-4::] == ".txt" and key > 0:
     main_shif = Main(fale,key)
