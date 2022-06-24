@@ -26,17 +26,17 @@ class Main:
   	for i in range(len(listOrd)):
   		a  = listOrd[i]
   		if a != " ":
-  			for _ in range(0, 20):
-  				b = a/2
-  				if b <= 0:
-  					number += " "
-  					break
-  				elif int(b) != b:
-  					number += "0"
-  					a = int(b)
-  				else:
-  					number += "1"
-  					a = b
+  		for _ in range(0, 20):
+  			b = a/2
+  			if b <= 0:
+  				number += " "
+  				break
+  			elif int(b) != b:
+  				number += "0"
+  				a = int(b)
+  			else:
+  				number += "1"
+  				a = b
   		elif a ==" ":
   			self.listResult.append(number)
   			self.listResult.append(" ")
